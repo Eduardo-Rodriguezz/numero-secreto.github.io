@@ -1,0 +1,44 @@
+* {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+#imagen {
+    height: 180px;
+    width: 180px;
+    border-radius: 20%;
+    border: 3px solid rgb(70, 28, 28);
+}
+
+.container {
+    color: #cacece;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: 3px solid rgb(65, 31, 31);
+    background-color: rgb(87, 50, 50);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#input-number, #btn-start, #btn-reset {
+    text-align: center;
+    width: 100%;
+    margin: 10px 0;
+}
+
+#game-title {
+    font-weight: 800;
+}
+
+.mt-5, #game-title {
+    background-color: rgb(61, 42, 42);
+    padding: 0 10px;
+}
+
+#text-resultado {
+    font-size: 1.5rem;
+}
