@@ -13,6 +13,7 @@ let accIntentos = 10;
 const miRandomNumber = Math.floor(Math.random() * 100) + 1;
 console.log(miRandomNumber);
 
+
 //Declaración de textos y dialogos de interfaz de usuario.
 gameTitle.textContent = 'Adivina el Número Secreto.';
 gameReglas.textContent = 'Reglas: Ingresa un número (entre 1-100) en el siguiente cuadro y pulsa "Adivinar", tienes 10 intentos.';
@@ -31,7 +32,7 @@ btnStart.addEventListener('click', () => {
     const adivinarNumero = (num) => {
         if(accIntentos < 1) {
             textResultado.style.color ='#ff8888';
-            textResultado.textContent = `Game Over - Intentalo de nuevo.`;
+            textResultado.textContent = `Game Over - El número era: ${miRandomNumber}`;
             btnStart.style.display = 'none';
             inputNumber.style.display = 'none';
             btnReset.style.display = 'block';
@@ -54,7 +55,7 @@ btnStart.addEventListener('click', () => {
             textResultado.textContent = `Felicidades! el número es: ${miRandomNumber} ¡Lo has encontrado!`;
             btnReset.style.display = 'block';
             btnStart.style.display = 'none';
-            srcImagen.style.backgroundImage = "url('carita-feliz.JPG')";
+            srcImagen.style.backgroundImage = "url('carita-feliz.jpg')";
             
         }
     }
