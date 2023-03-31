@@ -54,7 +54,7 @@ btnStart.addEventListener('click', () => {
             textResultado.textContent = `Felicidades! el número es: ${miRandomNumber} ¡Lo has encontrado!`;
             btnReset.style.display = 'block';
             btnStart.style.display = 'none';
-            srcImagen.style.backgroundImage = "url('carita-feliz.jpg')";
+            srcImagen.style.backgroundImage = "url('carita-feliz.JPG')";
             
         }
     }
